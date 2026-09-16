@@ -33,6 +33,15 @@
       },
       "versions": [
         {
+          "version": "0.28.0",
+          "buildVersion": "124",
+          "date": "2026-09-16T21:18:30Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.28.0/ManaVortex.ipa",
+          "size": 29712456,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Added\n- **A deck now tells you what it kills with.** *Your kills* joins *Your deaths* and *All deaths* on the deck sheet: the players this deck took out, broken down by how each of them went. Your phone has recorded who dealt every elimination since the game log was rewritten — it just never published it, so the website could say a deck made six kills and never that four were commander damage. **Not the same as winning**: you can eliminate two players and lose to the third, which is what the record above it answers. Games played before this shipped carry no attribution and cannot get one, so they are counted as *Not recorded* rather than quietly making the deck look harmless. Needs ManaVortex-Web 3.216.0"
+        },
+        {
           "version": "0.27.0",
           "buildVersion": "123",
           "date": "2026-09-16T20:23:22Z",
@@ -348,10 +357,10 @@
           "localizedDescription": "### Added\n- **iOS distribution via AltStore** — `altstore/source.json` catalog and app icon, plus a GitHub Actions workflow that builds an unsigned IPA on version tags, updates the catalog, and cuts a GitHub Release\n- README instructions for installing on iOS through AltStore\n\n### Fixed\n- Bundle identifier corrected from the Flutter placeholder (`com.example.magicLifeTracker`) to `io.manavortex.app`"
         }
       ],
-      "version": "0.27.0",
-      "versionDate": "2026-09-16T20:23:22Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.27.0/ManaVortex.ipa",
-      "size": 29710456
+      "version": "0.28.0",
+      "versionDate": "2026-09-16T21:18:30Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.28.0/ManaVortex.ipa",
+      "size": 29712456
     }
   ],
   "news": []
