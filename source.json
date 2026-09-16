@@ -20,10 +20,6 @@
         {
           "type": "camera",
           "usageDescription": "Used to scan Magic: The Gathering cards for collection tracking"
-        },
-        {
-          "type": "microphone",
-          "usageDescription": "Used only to record your own turn-timer warning sound. The recording stays on this device and is never uploaded."
         }
       ],
       "appPermissions": {
@@ -32,14 +28,19 @@
           {
             "name": "Camera",
             "usageDescription": "Used to scan Magic: The Gathering cards for collection tracking"
-          },
-          {
-            "name": "Microphone",
-            "usageDescription": "Used only to record your own turn-timer warning sound. The recording stays on this device and is never uploaded."
           }
         ]
       },
       "versions": [
+        {
+          "version": "0.26.0",
+          "buildVersion": "122",
+          "date": "2026-09-16T18:47:00Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.26.0/ManaVortex.ipa",
+          "size": 29708910,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Added\n- **A deck now tells you what keeps killing you.** Open any deck and *Your deaths* breaks down how that deck's games ended **for you** — commander damage, milling, a concession — with the games you were still standing in counted beside them. *All deaths* keeps the wider view underneath: every elimination at those tables, yours and everyone else's. Needs ManaVortex-Web 3.214.1 or newer; against an older server both blocks show the same, wider numbers\n\n### Changed\n- **The record screens read as charts rather than as spreadsheets.** *By turn order* is a bar per seat with the expectation for that pod size marked inside it — at four players everyone wins a quarter of the time, so 25 % is the line to beat and a 29 % seat now visibly clears it. Pod sizes with too few games to say anything are named in one line instead of drawing a chart of dashes. A deck's eliminations are a label, a bar and a count in three aligned columns, and both screens put every section in its own card\n- **A win rate needs three games before it is a win rate.** Below that the record is shown on its own: \"100 %\" off a single game was a number pretending to be a rate, and it was drawn as loudly as a seven-game row. Colour says something now too — green where a deck or a seat does better than you usually do, grey where it does worse, plain white in between\n- **\"How games ended\" is \"How players were eliminated\".** It counts every elimination in that deck's games — yours and your opponents', however it was dealt — which is not what the old title promised. It now says so under the heading\n- **Correcting a card is one screen's worth of controls.** The quantity is large and typeable, all five conditions sit in one row and all three finishes in another, and Cancel and Save split the width instead of huddling in a corner — which matters on an iPad, where the dialog is much wider"
+        },
         {
           "version": "0.23.1",
           "buildVersion": "119",
@@ -338,10 +339,10 @@
           "localizedDescription": "### Added\n- **iOS distribution via AltStore** — `altstore/source.json` catalog and app icon, plus a GitHub Actions workflow that builds an unsigned IPA on version tags, updates the catalog, and cuts a GitHub Release\n- README instructions for installing on iOS through AltStore\n\n### Fixed\n- Bundle identifier corrected from the Flutter placeholder (`com.example.magicLifeTracker`) to `io.manavortex.app`"
         }
       ],
-      "version": "0.23.1",
-      "versionDate": "2026-09-09T21:13:27Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.23.1/ManaVortex.ipa",
-      "size": 29728021
+      "version": "0.26.0",
+      "versionDate": "2026-09-16T18:47:00Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.26.0/ManaVortex.ipa",
+      "size": 29708910
     }
   ],
   "news": []
