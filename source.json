@@ -33,6 +33,15 @@
       },
       "versions": [
         {
+          "version": "0.34.0",
+          "buildVersion": "130",
+          "date": "2026-09-18T09:10:35Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.34.0/ManaVortex.ipa",
+          "size": 29704329,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Added\n- **A sound when a card is scanned.** Alongside the tap you already feel — a short, quiet blip, on by default and switchable in Settings. It replaces a system click that Flutter ignores on iPhones entirely and that on Android is the system touch tick, off by default on most phones: in practice the scanner has been silent for most of its life on most devices, which reads as a feature that does not work rather than one you switched off. The new sound respects the phone's silent switch and mixes with whatever you are listening to instead of interrupting it\n\n### Changed\n- **The scanner keeps looking while it records a card.** Taking a card used to switch the camera off for two seconds. Measured on a phone, that turned out to cost no time at all — you spend four to seven seconds reaching for the next card anyway, so the pause was hiding inside your own hands. What it did cost was evidence: the scanner now gets about a third more frames per second to work with, which is what the harder cards are short of. One card is still recorded once; a card lifted and put back down inside two seconds is the same card, and the scanner now re-arms that guard every time it briefly loses sight of one, which hand-held scanning does constantly\n\n### Fixed\n- **A title read correctly once and wrongly three times was looked up wrongly.** The scanner takes the most-agreed reading of the name across the last few seconds, and when the camera is hand-held the commonest reading is not always the right one. A German *Gebirge* was read correctly five times and as \"Gcbirge\" twice, and for 4.6 seconds every lookup went out as \"Gcbirge\" — which Scryfall has never heard of — while the correct spelling sat unused. When the agreed reading finds nothing, the next-best reading of the same title is now tried. It has to be the *same title read differently*, which a single mistaken letter is and a half-read one is not: that limit is what keeps a fragment of a card's rules text, or a name cut short, from being looked up and confidently matched to some other card\n- **Rules text could stop a card being scanned at all.** When a hand-held phone tilts, the strip the scanner reads the name from slides down onto the card's rules text — and reading a sentence where a title should be was treated as \"a different card is in front of the camera\", throwing away everything learned so far. A German *Lumbering Falls* was read correctly ten times and identified thirteen times over twelve seconds, and was never recorded, because the count restarted every three or four frames. A reading that matches no card no longer resets anything; the scanner now waits until it has actually *identified* a different card\n- **Scanning hand-held made the scanner choose a worse setting.** The scanner measures how long a frame takes and picks its camera resolution from it — but it was counting the frames it skipped for being blurry, which take about two milliseconds because nothing happens in them. Hand-held, most frames are skipped, and the last few before you put the phone down are all of them, so the figure it saved was two milliseconds rather than the real quarter of a second. It then moved itself up to a resolution measured to be *slower* at reading cards, and stayed there"
+        },
+        {
           "version": "0.28.0",
           "buildVersion": "124",
           "date": "2026-09-16T21:18:30Z",
@@ -357,10 +366,10 @@
           "localizedDescription": "### Added\n- **iOS distribution via AltStore** — `altstore/source.json` catalog and app icon, plus a GitHub Actions workflow that builds an unsigned IPA on version tags, updates the catalog, and cuts a GitHub Release\n- README instructions for installing on iOS through AltStore\n\n### Fixed\n- Bundle identifier corrected from the Flutter placeholder (`com.example.magicLifeTracker`) to `io.manavortex.app`"
         }
       ],
-      "version": "0.28.0",
-      "versionDate": "2026-09-16T21:18:30Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.28.0/ManaVortex.ipa",
-      "size": 29712456
+      "version": "0.34.0",
+      "versionDate": "2026-09-18T09:10:35Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.34.0/ManaVortex.ipa",
+      "size": 29704329
     }
   ],
   "news": []
