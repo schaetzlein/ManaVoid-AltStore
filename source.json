@@ -33,6 +33,15 @@
       },
       "versions": [
         {
+          "version": "0.37.1",
+          "buildVersion": "136",
+          "date": "2026-09-18T12:31:48Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.37.1/ManaVortex.ipa",
+          "size": 29824243,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Fixed\n- **Four things that only showed up once the light theme was switched on.** Unchosen options in Settings were drawn as dark blocks, louder than the one you had actually picked. The bar in the top toolbar turned faintly purple as soon as a list scrolled under it. A record too thin to draw a conclusion from — one game — was given the darkest bar on the History screen, so the one row the app is refusing to judge looked like the strongest result on it. And the little green \"up\" figures next to set prices were a pale mint that all but disappeared on a light background"
+        },
+        {
           "version": "0.37.0",
           "buildVersion": "135",
           "date": "2026-09-18T12:00:31Z",
@@ -411,10 +420,10 @@
           "localizedDescription": "### Added\n- **iOS distribution via AltStore** — `altstore/source.json` catalog and app icon, plus a GitHub Actions workflow that builds an unsigned IPA on version tags, updates the catalog, and cuts a GitHub Release\n- README instructions for installing on iOS through AltStore\n\n### Fixed\n- Bundle identifier corrected from the Flutter placeholder (`com.example.magicLifeTracker`) to `io.manavortex.app`"
         }
       ],
-      "version": "0.37.0",
-      "versionDate": "2026-09-18T12:00:31Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.37.0/ManaVortex.ipa",
-      "size": 29824671
+      "version": "0.37.1",
+      "versionDate": "2026-09-18T12:31:48Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.37.1/ManaVortex.ipa",
+      "size": 29824243
     }
   ],
   "news": []
