@@ -33,6 +33,15 @@
       },
       "versions": [
         {
+          "version": "0.35.0",
+          "buildVersion": "131",
+          "date": "2026-09-18T10:09:06Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.35.0/ManaVortex.ipa",
+          "size": 29711285,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Fixed\n- **The scanner could name the wrong printing and not say so.** A set code tells you which *set* a card is from, not which printing — a set routinely holds the same card two or three times, as a plain copy, a borderless one, an extended-art one. The scanner treated a matching set code as proof it had the right printing, so a German *Feindliche Übernahme*, which is SNC #310, was filed as SNC #191 at 80 % confidence with nothing marking it as uncertain; a *Mishra* that is BRO #295 was filed as #217. Both carry the wrong price. It now checks whether that set holds more than one printing of the card, and where it does — and the collector number could not be read — it says so: the row turns red with the swap arrow that lets you pick the right one, exactly as it already did for cards with no set code at all. The same applied to a card appearing for the first time in a set: being nobody's reprint was taken as proof of the printing, but a card released alongside its own alternate-art version has two, and both are new\n\n- **A misread collector number could record a completely different card.** The scanner asks Scryfall for \"card number 227 in this set\", so a digit read wrongly does not produce a weak answer — it produces a confident answer about somebody else's card, which then agrees with the number it was asked for. A German *Verdorbener Genuss* was read as number 221 and filed as *Shattered Seraph*; the right card was recognised a fraction of a second later and filed too, leaving both in the session. The card's *name* is the one thing the lookup never uses, so it is the only thing that can object — and it did object, and was ignored, because it was only listened to when it disagreed almost completely. It is now listened to whenever it disagrees at all, and a card whose name does not match is no longer recorded on the strength of two quick frames\n\n### Added\n- **Tap the scanner to focus where you tapped.** Holding a card by hand, it will sometimes refuse to come sharp — usually because it is closer than the lens can focus, or because the camera has settled on the table behind it — and until now there was nothing you could do but move the card and hope. A tap anywhere on the preview refocuses there, with a ring to show it was heard\n\n### Changed\n- **Cards lock in faster.** Where the set code alone is enough to identify a printing — which is most cards, since most sets contain each card once — the scanner no longer waits an extra frame for a collector number that could not narrow anything further. It also now counts agreeing frames per *card* rather than per printing: a card that reads as one printing in one frame and another in the next used to have its evidence split in two, so the cards whose printing is hardest to read were also the slowest to record"
+        },
+        {
           "version": "0.34.0",
           "buildVersion": "130",
           "date": "2026-09-18T09:10:35Z",
@@ -366,10 +375,10 @@
           "localizedDescription": "### Added\n- **iOS distribution via AltStore** — `altstore/source.json` catalog and app icon, plus a GitHub Actions workflow that builds an unsigned IPA on version tags, updates the catalog, and cuts a GitHub Release\n- README instructions for installing on iOS through AltStore\n\n### Fixed\n- Bundle identifier corrected from the Flutter placeholder (`com.example.magicLifeTracker`) to `io.manavortex.app`"
         }
       ],
-      "version": "0.34.0",
-      "versionDate": "2026-09-18T09:10:35Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.34.0/ManaVortex.ipa",
-      "size": 29704329
+      "version": "0.35.0",
+      "versionDate": "2026-09-18T10:09:06Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.35.0/ManaVortex.ipa",
+      "size": 29711285
     }
   ],
   "news": []
