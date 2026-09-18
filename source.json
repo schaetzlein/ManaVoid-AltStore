@@ -33,6 +33,15 @@
       },
       "versions": [
         {
+          "version": "0.36.0",
+          "buildVersion": "132",
+          "date": "2026-09-18T10:36:41Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.36.0/ManaVortex.ipa",
+          "size": 29715829,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Added\n- **The scanner says what quality it is capturing at.** A dim line under the status pill — `1080p · 186 ms` — giving the resolution in use and how long a frame is taking. There is nothing to set: the scanner measures your phone and picks, as it always has. What it never did was tell you the answer, which took a cable and a log to find out\n\n### Changed\n- **The scanner now starts at 1080p and steps down if your phone cannot keep up**, rather than starting at 720p and working up. The measurements that set the old default came from one 2019 phone; most phones are quicker than that, and the scanner has always measured each device for itself — so it now begins optimistic and gives the quality back after a session if frames prove too slow. The point at which it gives up was also lowered, because at the old setting that 2019 phone would have been left on a resolution its own timings show is worse for it"
+        },
+        {
           "version": "0.35.0",
           "buildVersion": "131",
           "date": "2026-09-18T10:09:06Z",
@@ -375,10 +384,10 @@
           "localizedDescription": "### Added\n- **iOS distribution via AltStore** — `altstore/source.json` catalog and app icon, plus a GitHub Actions workflow that builds an unsigned IPA on version tags, updates the catalog, and cuts a GitHub Release\n- README instructions for installing on iOS through AltStore\n\n### Fixed\n- Bundle identifier corrected from the Flutter placeholder (`com.example.magicLifeTracker`) to `io.manavortex.app`"
         }
       ],
-      "version": "0.35.0",
-      "versionDate": "2026-09-18T10:09:06Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.35.0/ManaVortex.ipa",
-      "size": 29711285
+      "version": "0.36.0",
+      "versionDate": "2026-09-18T10:36:41Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.36.0/ManaVortex.ipa",
+      "size": 29715829
     }
   ],
   "news": []
