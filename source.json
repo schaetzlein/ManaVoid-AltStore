@@ -33,6 +33,15 @@
       },
       "versions": [
         {
+          "version": "0.36.2",
+          "buildVersion": "134",
+          "date": "2026-09-18T11:01:29Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.36.2/ManaVortex.ipa",
+          "size": 29717201,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Fixed\n- **The set code was missed whenever the dot next to it was.** Cards print their set and language as `SNC • DE`, and that dot is the smallest mark on the card — at the size the scanner sees it, it disappears, turns into a stray character, or sticks to the letter after it, so the app read `SNCDE` and gave up. On the same recordings the set is now identified on 85 lines instead of 59, without a single wrong one, and a few more collector numbers came with it. A set code is only accepted if it is a real one the app knows, still printed in capitals, and on a card new enough to have one at all"
+        },
+        {
           "version": "0.36.1",
           "buildVersion": "133",
           "date": "2026-09-18T10:52:52Z",
@@ -393,10 +402,10 @@
           "localizedDescription": "### Added\n- **iOS distribution via AltStore** — `altstore/source.json` catalog and app icon, plus a GitHub Actions workflow that builds an unsigned IPA on version tags, updates the catalog, and cuts a GitHub Release\n- README instructions for installing on iOS through AltStore\n\n### Fixed\n- Bundle identifier corrected from the Flutter placeholder (`com.example.magicLifeTracker`) to `io.manavortex.app`"
         }
       ],
-      "version": "0.36.1",
-      "versionDate": "2026-09-18T10:52:52Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.36.1/ManaVortex.ipa",
-      "size": 29716502
+      "version": "0.36.2",
+      "versionDate": "2026-09-18T11:01:29Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.36.2/ManaVortex.ipa",
+      "size": 29717201
     }
   ],
   "news": []
