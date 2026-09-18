@@ -33,6 +33,15 @@
       },
       "versions": [
         {
+          "version": "0.36.1",
+          "buildVersion": "133",
+          "date": "2026-09-18T10:52:52Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.36.1/ManaVortex.ipa",
+          "size": 29716502,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Fixed\n- **The collector number on a card was almost never read.** It is the only thing that tells one printing of a card from another, and across three scanning sessions it was read correctly *once* — not because the camera could not see it, but because of what happened to it afterwards. The number sits at the very bottom of the card, where the printed line runs into the edge, and the edge comes back from the text reader as a stray bracket: `0024]`. That one character was enough to make the app discard the whole number. Cards that print the number without padding — as `295` rather than `0295` — were never readable at all. All three are fixed, and on the same recordings the number now reads correctly 24 times instead of once, which is what lets the app tell a borderless printing from a plain one rather than shrugging and asking you"
+        },
+        {
           "version": "0.36.0",
           "buildVersion": "132",
           "date": "2026-09-18T10:36:41Z",
@@ -384,10 +393,10 @@
           "localizedDescription": "### Added\n- **iOS distribution via AltStore** — `altstore/source.json` catalog and app icon, plus a GitHub Actions workflow that builds an unsigned IPA on version tags, updates the catalog, and cuts a GitHub Release\n- README instructions for installing on iOS through AltStore\n\n### Fixed\n- Bundle identifier corrected from the Flutter placeholder (`com.example.magicLifeTracker`) to `io.manavortex.app`"
         }
       ],
-      "version": "0.36.0",
-      "versionDate": "2026-09-18T10:36:41Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.36.0/ManaVortex.ipa",
-      "size": 29715829
+      "version": "0.36.1",
+      "versionDate": "2026-09-18T10:52:52Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.36.1/ManaVortex.ipa",
+      "size": 29716502
     }
   ],
   "news": []
