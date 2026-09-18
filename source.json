@@ -33,6 +33,15 @@
       },
       "versions": [
         {
+          "version": "0.37.0",
+          "buildVersion": "135",
+          "date": "2026-09-18T12:00:31Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.37.0/ManaVortex.ipa",
+          "size": 29824671,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Added\n- **A light theme, and a Theme setting to choose it.** System, Light or Dark, at the top of the display settings. The app has been dark-only since the old light and dark options were dropped for being half-finished; the website has since grown a properly designed light palette, and this is that one rather than a new attempt. Dark stays the default and anyone who never opens the setting sees no change\n- **The app now looks like the website.** Backgrounds, panels, text, borders and the violet accent are the same values ManaVortex-Web uses, and the body typeface is the same one (DM Sans). Decks come down from the site and matches go up to it; until now the two halves shared a login and nothing else. The colours of the home-screen tiles and the player tiles in a game are untouched — telling one seat from another across a table is a different job from looking tidy\n\n### Fixed\n- **A seat's name could be hard to read on the cyan tile.** The app picks black or white lettering per tile depending on how bright it is, and the cut-off it used put white on a tile that needed black — the one case in eight where the guess and the measurement disagreed. It now compares the two directly, which is what it always claimed to do"
+        },
+        {
           "version": "0.36.2",
           "buildVersion": "134",
           "date": "2026-09-18T11:01:29Z",
@@ -402,10 +411,10 @@
           "localizedDescription": "### Added\n- **iOS distribution via AltStore** — `altstore/source.json` catalog and app icon, plus a GitHub Actions workflow that builds an unsigned IPA on version tags, updates the catalog, and cuts a GitHub Release\n- README instructions for installing on iOS through AltStore\n\n### Fixed\n- Bundle identifier corrected from the Flutter placeholder (`com.example.magicLifeTracker`) to `io.manavortex.app`"
         }
       ],
-      "version": "0.36.2",
-      "versionDate": "2026-09-18T11:01:29Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.36.2/ManaVortex.ipa",
-      "size": 29717201
+      "version": "0.37.0",
+      "versionDate": "2026-09-18T12:00:31Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.37.0/ManaVortex.ipa",
+      "size": 29824671
     }
   ],
   "news": []
