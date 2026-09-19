@@ -33,6 +33,15 @@
       },
       "versions": [
         {
+          "version": "0.39.0",
+          "buildVersion": "140",
+          "date": "2026-09-19T19:02:40Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.39.0/ManaVortex.ipa",
+          "size": 29846283,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Added\n- **Cards you scanned before signing in can be moved to your account.** Collection → ⋮ → *Move these cards to my account*, offered only when there is something to move. They are **moved**, not copied: once your account confirms a card it stops being kept on the device, because a card in both places is counted and priced twice. Only cards the server actually accepted are handed over — anything it rejects stays where it is and says so. Binders come too: a binder you made offline is recreated on your account with its cards in it, and if you already have one of that name you are asked what to do rather than guessed at. One-way, and the confirmation says so\n\n### Changed\n- **Saving a scan session asks where in a proper sheet.** It used to be a bare list of names in which *tapping one saved immediately* — no confirmation, nothing showing what you had picked, and no statement of what was being saved. The sheet says the scope up front (how many cards, how many unique, what they are worth), shows the card count on each binder, keeps the selection visible and inert, puts the new-binder name field inline instead of opening a second dialog on top of the first, and commits only when you press Save. Cancel is a button as well as a gesture\n\n### Fixed\n- **A failed publish no longer leaves an empty binder on your account.** Choosing \"New binder\" created it the moment you typed the name, before any card was sent — so if the upload then failed you were left with a binder you never asked for and, binder management being website-only, could not remove from the phone. It is now created immediately before the cards are sent and removed again if they do not arrive\n- **Creating a binder while signed in creates it on your account.** It made a device-only binder that looked like your account's ones, could never hold a card the account knows about, and nothing would ever carry it up — a dead end. Signed out it is still local, because that is the only collection there is\n\n### Note\n- Moving cards to your account needs **ManaVortex-Web 3.239.0** or newer. Against an older server the move confirms nothing, so it removes nothing and reports that it moved no cards — inaccurate, but in the direction that cannot lose a card"
+        },
+        {
           "version": "0.38.2",
           "buildVersion": "139",
           "date": "2026-09-19T17:33:40Z",
@@ -438,10 +447,10 @@
           "localizedDescription": "### Added\n- **iOS distribution via AltStore** — `altstore/source.json` catalog and app icon, plus a GitHub Actions workflow that builds an unsigned IPA on version tags, updates the catalog, and cuts a GitHub Release\n- README instructions for installing on iOS through AltStore\n\n### Fixed\n- Bundle identifier corrected from the Flutter placeholder (`com.example.magicLifeTracker`) to `io.manavortex.app`"
         }
       ],
-      "version": "0.38.2",
-      "versionDate": "2026-09-19T17:33:40Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.38.2/ManaVortex.ipa",
-      "size": 29831431
+      "version": "0.39.0",
+      "versionDate": "2026-09-19T19:02:40Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.39.0/ManaVortex.ipa",
+      "size": 29846283
     }
   ],
   "news": []
