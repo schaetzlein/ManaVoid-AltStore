@@ -33,6 +33,15 @@
       },
       "versions": [
         {
+          "version": "0.38.1",
+          "buildVersion": "138",
+          "date": "2026-09-19T17:17:45Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.38.1/ManaVortex.ipa",
+          "size": 29857751,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Added\n- **The wishlist shows the cheapest printing of each card under its price**, in green with the set it is in, the same figure the website's wishlist carries. It answers \"am I hunting the expensive one?\" without opening anything. Drawn only when the cheapest printing is a *different* one — on a row that already lists the cheapest it would repeat the figure above it in another colour\n\n### Changed\n- **A wishlist card's mana cost sits at the end of its name**, where a card prints it and where every deck list puts it, rather than in front of the type line\n- **A wishlist row starts where its picture ends.** Every name was indented by an empty slot held open for the foil sparkle, so on a list with no foils in it — most lists — there was a gap between the card and its name for a mark that was never there. The sparkle now rides on the corner of the card's picture, which costs no width at all and puts the finish on the thing it describes\n- **The alarm tones sit under the Sound warning switch**, without a rule across the page and a heading of their own above them. They are not a separate setting; they are which sound that switch plays, which is all the heading said. All five are on one line in both languages\n- **Settings no longer draws the same speaker icon twice.** The turn warning's sound and the scanner's capture blip are unrelated settings and looked like one setting written out twice; the scanner's is now a waveform\n- **\"Turns are timed either way\" is back under the turn timer**, the only switch that raises the question. As a footnote at the bottom of the card it sat under the tone picker, answering something that row does not ask, three rows from the one that does"
+        },
+        {
           "version": "0.37.1",
           "buildVersion": "136",
           "date": "2026-09-18T12:31:48Z",
@@ -420,10 +429,10 @@
           "localizedDescription": "### Added\n- **iOS distribution via AltStore** — `altstore/source.json` catalog and app icon, plus a GitHub Actions workflow that builds an unsigned IPA on version tags, updates the catalog, and cuts a GitHub Release\n- README instructions for installing on iOS through AltStore\n\n### Fixed\n- Bundle identifier corrected from the Flutter placeholder (`com.example.magicLifeTracker`) to `io.manavortex.app`"
         }
       ],
-      "version": "0.37.1",
-      "versionDate": "2026-09-18T12:31:48Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.37.1/ManaVortex.ipa",
-      "size": 29824243
+      "version": "0.38.1",
+      "versionDate": "2026-09-19T17:17:45Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.38.1/ManaVortex.ipa",
+      "size": 29857751
     }
   ],
   "news": []
