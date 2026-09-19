@@ -33,6 +33,15 @@
       },
       "versions": [
         {
+          "version": "0.38.2",
+          "buildVersion": "139",
+          "date": "2026-09-19T17:33:40Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.38.2/ManaVortex.ipa",
+          "size": 29831431,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Added\n- **The wishlist says what it would cost at the cheapest printings**, under the total and beside what that would save — the second figure the website's wishlist carries. Offline it is rebuilt from the cached rows, and dropped entirely if any row has no price on record, on the same rule as the first total: a sum over a different set of cards is not a comparison\n\n### Removed\n- **Settings → Players & decks is gone**, and so is the screen behind it. Everything it did happens where it is needed: a player is created, renamed and deleted in the seat picker, and a deck is named — with its commanders — in the same place, at the moment somebody is being seated with it. What was left on that screen was one working control (delete a deck), one that had been wired to nothing since the deck importers were removed in 0.31.0 (rename), a drag-to-reorder for a list that no longer had a home, and a wins–losses dialog that History → Record and a deck's own sheet both answer properly. **A deck can no longer be deleted on the phone** — that is the one thing given up, and it was not worth a screen"
+        },
+        {
           "version": "0.38.1",
           "buildVersion": "138",
           "date": "2026-09-19T17:17:45Z",
@@ -429,10 +438,10 @@
           "localizedDescription": "### Added\n- **iOS distribution via AltStore** — `altstore/source.json` catalog and app icon, plus a GitHub Actions workflow that builds an unsigned IPA on version tags, updates the catalog, and cuts a GitHub Release\n- README instructions for installing on iOS through AltStore\n\n### Fixed\n- Bundle identifier corrected from the Flutter placeholder (`com.example.magicLifeTracker`) to `io.manavortex.app`"
         }
       ],
-      "version": "0.38.1",
-      "versionDate": "2026-09-19T17:17:45Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.38.1/ManaVortex.ipa",
-      "size": 29857751
+      "version": "0.38.2",
+      "versionDate": "2026-09-19T17:33:40Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.38.2/ManaVortex.ipa",
+      "size": 29831431
     }
   ],
   "news": []
