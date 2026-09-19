@@ -33,6 +33,15 @@
       },
       "versions": [
         {
+          "version": "0.39.1",
+          "buildVersion": "141",
+          "date": "2026-09-19T20:30:32Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.39.1/ManaVortex.ipa",
+          "size": 29848240,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Fixed\n- **Naming a new binder no longer trips an assertion while the dialog closes.** Its text field's controller was released the moment the dialog was dismissed, while the dialog was still animating away and still using it"
+        },
+        {
           "version": "0.39.0",
           "buildVersion": "140",
           "date": "2026-09-19T19:02:40Z",
@@ -447,10 +456,10 @@
           "localizedDescription": "### Added\n- **iOS distribution via AltStore** — `altstore/source.json` catalog and app icon, plus a GitHub Actions workflow that builds an unsigned IPA on version tags, updates the catalog, and cuts a GitHub Release\n- README instructions for installing on iOS through AltStore\n\n### Fixed\n- Bundle identifier corrected from the Flutter placeholder (`com.example.magicLifeTracker`) to `io.manavortex.app`"
         }
       ],
-      "version": "0.39.0",
-      "versionDate": "2026-09-19T19:02:40Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.39.0/ManaVortex.ipa",
-      "size": 29846283
+      "version": "0.39.1",
+      "versionDate": "2026-09-19T20:30:32Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVortex-AltStore/releases/download/v0.39.1/ManaVortex.ipa",
+      "size": 29848240
     }
   ],
   "news": []
