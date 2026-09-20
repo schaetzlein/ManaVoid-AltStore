@@ -1,17 +1,17 @@
 <div align="center">
 
-<img src="icon.png" alt="ManaVortex" width="120">
+<img src="icon.png" alt="ManaVoid" width="120">
 
-# ManaVortex — AltStore Source
+# ManaVoid — AltStore Source
 
 **Commander game tracker for Magic: The Gathering**
 
-[![Latest release](https://img.shields.io/github/v/release/schaetzlein/ManaVortex-AltStore?label=latest&color=FF5252)](https://github.com/schaetzlein/ManaVortex-AltStore/releases/latest)
+[![Latest release](https://img.shields.io/github/v/release/schaetzlein/ManaVoid-AltStore?label=latest&color=7C5CFF)](https://github.com/schaetzlein/ManaVoid-AltStore/releases/latest)
 [![iOS 15.5+](https://img.shields.io/badge/iOS-15.5%2B-black)](#requirements)
 
 </div>
 
-This repository is the **iOS distribution channel** for ManaVortex — the AltStore
+This repository is the **iOS distribution channel** for ManaVoid — the AltStore
 source catalogue and the signed-on-your-device IPA builds. It holds no
 application code; it exists so AltStore has something to point at.
 
@@ -23,7 +23,7 @@ application code; it exists so AltStore has something to point at.
 > Apple's sanctioned EU marketplace, so it only installs apps that Apple has
 > **notarized**. Adding this source to PAL fails with:
 >
-> > *One or more apps in source "ManaVortex" are missing a marketplaceID. This
+> > *One or more apps in source "ManaVoid" are missing a marketplaceID. This
 > > most likely means they are not notarized, which is not supported by this
 > > version of AltStore.*
 >
@@ -36,20 +36,35 @@ application code; it exists so AltStore has something to point at.
 
 ---
 
+> [!NOTE]
+> **ManaVortex is now ManaVoid.** Same app, same developer, new name and mark.
+>
+> ManaVoid **installs alongside** the old app rather than replacing it: it
+> carries new identifiers, so iOS treats the two as separate apps. Nothing
+> is carried across — the games, players and locally scanned cards in
+> ManaVortex stay there. Anything held in your account (decks, collection,
+> binders, wishlist, trades, match history) comes back down when you sign in.
+> **Keep the old app until you are sure you have what you need**, and move any
+> cards you scanned while signed out with Collection → *Move these cards to my
+> account* first.
+>
+> The source URL changed with the repository name, which is why you are
+> re-adding it: the old one no longer resolves.
+
 ## Add the source
 
 Tap this on the iPhone that has AltStore installed:
 
-**[➕ Add to AltStore](altstore://source?url=https://raw.githubusercontent.com/schaetzlein/ManaVortex-AltStore/main/source.json)**  ·  **[➕ Add to SideStore](sidestore://source?url=https://raw.githubusercontent.com/schaetzlein/ManaVortex-AltStore/main/source.json)**
+**[➕ Add to AltStore](altstore://source?url=https://raw.githubusercontent.com/schaetzlein/ManaVoid-AltStore/main/source.json)**  ·  **[➕ Add to SideStore](sidestore://source?url=https://raw.githubusercontent.com/schaetzlein/ManaVoid-AltStore/main/source.json)**
 
 If your browser does not hand the link off to the app, add it by hand instead —
 **AltStore → Browse → Sources → +** — and paste:
 
 ```
-https://raw.githubusercontent.com/schaetzlein/ManaVortex-AltStore/main/source.json
+https://raw.githubusercontent.com/schaetzlein/ManaVoid-AltStore/main/source.json
 ```
 
-Then open the ManaVortex source and tap **Install**.
+Then open the ManaVoid source and tap **Install**.
 
 ## First-time setup
 
@@ -67,21 +82,14 @@ If AltStore is not on the phone yet, that comes first, and it needs a computer:
    in with an Apple ID. A free account is fine.
 4. **On the iPhone** — Settings → General → VPN & Device Management → trust the
    developer certificate. AltStore will not launch until you do.
-5. **iOS 16 and newer also require Developer Mode.** Try to open AltStore (or
-   any app AltServer just installed) and iOS blocks it with a prompt to enable
-   Developer Mode — that prompt is what makes the toggle appear; it is not
-   sitting in Settings beforehand. Follow it to Settings → Privacy & Security →
-   Developer Mode, turn it on, then let the phone restart and tap **Turn On**
-   on the confirmation dialog that appears after reboot. Without this step,
-   sideloaded apps fail to launch with no clearer error than that.
-6. Add the source above and install ManaVortex.
+5. Add the source above and install ManaVoid.
 
 ## Requirements
 
 | | |
 |---|---|
 | **Installer** | AltStore **Classic** or **SideStore**. AltStore **PAL** cannot use this source — see the note at the top |
-| **iOS** | 15.5 or newer (16+ also needs Developer Mode enabled — see [First-time setup](#first-time-setup)) |
+| **iOS** | 15.5 or newer |
 | **Apple ID** | Any, including a free one — no Apple Developer Program membership |
 | **Computer** | Needed once to install AltStore, and again to refresh (see below) |
 | **App slots** | A free Apple ID allows **3** sideloaded apps at a time; AltStore itself uses one |
@@ -102,8 +110,8 @@ device itself after a one-time pairing, and reads this same source.
 
 ## Installing without AltStore
 
-Every release also attaches the plain `ManaVortex.ipa`. Grab it from
-[Releases](https://github.com/schaetzlein/ManaVortex-AltStore/releases) and
+Every release also attaches the plain `ManaVoid.ipa`. Grab it from
+[Releases](https://github.com/schaetzlein/ManaVoid-AltStore/releases) and
 sideload it with whatever you prefer — Sideloadly, TrollStore on a supported
 device, or a paid developer account and Xcode. The IPA is **unsigned**; it is
 signed at install time with your own credentials.
@@ -112,41 +120,32 @@ signed at install time with your own credentials.
 
 | File | Purpose |
 |---|---|
-| `source.json` | The AltStore source catalogue — app metadata, and every published version with its release notes |
+| `source.json` | The AltStore source catalogue — app metadata and every published version |
 | `icon.png` | App and source icon |
-| Releases | One tagged GitHub release per version, each with `ManaVortex.ipa` attached |
+| Releases | One tagged GitHub release per version, each with `ManaVoid.ipa` attached |
 
 `source.json` follows the AltStore Source API v2 format (the `apps[].versions[]`
 array), which AltStore 2.0+ and SideStore both read. Newest version first; older
-entries stay so AltStore can offer a downgrade. The newest entry is also
-mirrored onto the older flat `version` / `versionDate` / `downloadURL` / `size`
-fields, because AltStore 1.4.3 and earlier predate `versions[]` entirely and
-reject a catalogue without them with *"The data couldn't be read because it
-isn't in the correct format."*
+entries stay so AltStore can offer a downgrade.
 
 ## How a release gets here
 
 Nothing in this repository is edited by hand. The **AltStore Release** workflow
-in the ManaVortex build repository runs on demand and does all of it: builds the
+in the ManaVoid build repository runs on demand and does all of it: builds the
 unsigned IPA, cuts the tagged release here with the IPA attached, and prepends
 the new entry to `source.json` — replacing any existing entry for the same
 version rather than stacking a duplicate.
 
-The version's section of the app's changelog is pulled out once and used twice:
-as the release body you are reading on this site, and as the entry's
-`localizedDescription`, which is what AltStore shows as the release notes for an
-update on the phone itself.
-
 ## About the app
 
-ManaVortex tracks Magic: The Gathering **Commander** games at the table — life
+ManaVoid tracks Magic: The Gathering **Commander** games at the table — life
 totals, commander damage, poison, turn timer, automatic elimination,
 a full undoable game log, and post-game statistics. It is **local-first**: your
 games live on your device, tracking works with no connection and no account,
 and nothing is sent anywhere unless you turn it on. (The card scanner is the
 one part that needs a connection — it looks printings up online.)
 
-Signing in with a [ManaVortex-Web](https://magic.sovra.cc) account is optional
+Signing in with a [ManaVoid](https://magic.sovra.cc) account is optional
 and adds two things: your web decks appear in the player slots, and — as a
 separate opt-in, off by default — finished games can be published to your
 account so the website can show win rates and matchups. The camera permission is
@@ -156,6 +155,6 @@ Available in English and German.
 
 ## Problems?
 
-Open an [issue](https://github.com/schaetzlein/ManaVortex-AltStore/issues).
+Open an [issue](https://github.com/schaetzlein/ManaVoid-AltStore/issues).
 Installation trouble that turns out to be AltStore itself rather than this app
 is usually answered faster at [altstore.io](https://altstore.io).

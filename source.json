@@ -1,18 +1,44 @@
 {
-  "name": "ManaVortex",
-  "identifier": "io.manavortex.altstore-source",
+  "name": "ManaVoid",
+  "identifier": "app.manavoid.altstore-source",
   "subtitle": "Commander game tracker for Magic: The Gathering",
   "description": "Local-first, offline Commander life tracker. Track life totals, commander damage, poison counters, and game history — no account, no internet required.",
-  "iconURL": "https://raw.githubusercontent.com/schaetzlein/ManaVortex-AltStore/main/icon.png",
-  "website": "https://github.com/schaetzlein/ManaVortex-AltStore",
-  "tintColor": "#FF5252",
+  "iconURL": "https://raw.githubusercontent.com/schaetzlein/ManaVoid-AltStore/main/icon.png",
+  "website": "https://github.com/schaetzlein/ManaVoid-AltStore",
+  "tintColor": "#7C5CFF",
   "apps": [
     {
-      "name": "ManaVortex",
+      "name": "ManaVoid",
+      "bundleIdentifier": "app.manavoid",
+      "developerName": "Lukas Schätzlein",
+      "subtitle": "Commander game tracker for Magic: The Gathering",
+      "localizedDescription": "Track your Magic: The Gathering Commander games locally. Log life totals, commander damage, poison counters, and more. Full game history with statistics — no account or internet connection required.\n\nFormerly ManaVortex. ManaVoid installs alongside it rather than replacing it: it carries new identifiers, so iOS treats it as a separate app and none of the old one's games, players or scanned cards come across. Anything in your account comes back down when you sign in. Keep the old app until you are sure you have what you need.",
+      "iconURL": "https://raw.githubusercontent.com/schaetzlein/ManaVoid-AltStore/main/icon.png",
+      "tintColor": "#7C5CFF",
+      "screenshots": [],
+      "permissions": [
+        {
+          "type": "camera",
+          "usageDescription": "Used to scan Magic: The Gathering cards for collection tracking"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": [
+          {
+            "name": "Camera",
+            "usageDescription": "Used to scan Magic: The Gathering cards for collection tracking"
+          }
+        ]
+      },
+      "versions": []
+    },
+    {
+      "name": "ManaVortex (retired)",
       "bundleIdentifier": "io.manavortex.app",
       "developerName": "Lukas Schätzlein",
       "subtitle": "Commander game tracker for Magic: The Gathering",
-      "localizedDescription": "Track your Magic: The Gathering Commander games locally. Log life totals, commander damage, poison counters, and more. Full game history with statistics — no account or internet connection required.",
+      "localizedDescription": "The previous name of ManaVoid. This entry keeps the copy already on your device recognised and its version history reachable; it receives no further updates. Install ManaVoid above — it runs alongside this one, so nothing is lost by keeping both until you have moved what you need.\n\nTrack your Magic: The Gathering Commander games locally. Log life totals, commander damage, poison counters, and more. Full game history with statistics — no account or internet connection required.",
       "iconURL": "https://raw.githubusercontent.com/schaetzlein/ManaVortex-AltStore/main/icon.png",
       "tintColor": "#FF5252",
       "screenshots": [],
