@@ -39,17 +39,13 @@ application code; it exists so AltStore has something to point at.
 > [!NOTE]
 > **ManaVortex is now ManaVoid.** Same app, same developer, new name and mark.
 >
-> ManaVoid **installs alongside** the old app rather than replacing it: it
-> carries new identifiers, so iOS treats the two as separate apps. Nothing
-> is carried across — the games, players and locally scanned cards in
-> ManaVortex stay there. Anything held in your account (decks, collection,
-> binders, wishlist, trades, match history) comes back down when you sign in.
-> **Keep the old app until you are sure you have what you need**, and move any
-> cards you scanned while signed out with Collection → *Move these cards to my
-> account* first.
+> The source URL changed with the repository name. The old one still resolves —
+> `raw.githubusercontent.com` follows a rename — but point at this one.
 >
-> The source URL changed with the repository name, which is why you are
-> re-adding it: the old one no longer resolves.
+> ManaVoid carries new identifiers, so iOS treats it as a separate app from
+> ManaVortex rather than an update to it. Nothing carries across from an old
+> install: its games, players and locally scanned cards stay there. Anything
+> held in your account comes back down when you sign in.
 
 ## Add the source
 
