@@ -141,7 +141,7 @@ games live on your device, tracking works with no connection and no account,
 and nothing is sent anywhere unless you turn it on. (The card scanner is the
 one part that needs a connection — it looks printings up online.)
 
-Signing in with a [ManaVoid](https://magic.sovra.cc) account is optional
+Signing in with a [ManaVoid](https://manavoid.app) account is optional
 and adds two things: your web decks appear in the player slots, and — as a
 separate opt-in, off by default — finished games can be published to your
 account so the website can show win rates and matchups. The camera permission is
