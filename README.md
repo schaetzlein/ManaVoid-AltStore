@@ -36,17 +36,6 @@ application code; it exists so AltStore has something to point at.
 
 ---
 
-> [!NOTE]
-> **ManaVortex is now ManaVoid.** Same app, same developer, new name and mark.
->
-> The source URL changed with the repository name. The old one still resolves —
-> `raw.githubusercontent.com` follows a rename — but point at this one.
->
-> ManaVoid carries new identifiers, so iOS treats it as a separate app from
-> ManaVortex rather than an update to it. Nothing carries across from an old
-> install: its games, players and locally scanned cards stay there. Anything
-> held in your account comes back down when you sign in.
-
 ## Add the source
 
 Tap this on the iPhone that has AltStore installed:
