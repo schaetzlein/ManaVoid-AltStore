@@ -33,6 +33,15 @@
       },
       "versions": [
         {
+          "version": "0.41.1",
+          "buildVersion": "145",
+          "date": "2026-09-24T13:49:27Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.41.1/ManaVoid.ipa",
+          "size": 30067093,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Changed\n- **Card images and set symbols now load from manavoid.app** instead of straight from Scryfall in the USA, so your IP address no longer goes to Scryfall when a card is drawn. The pictures are the same\n- **The scanner asks before it looks cards up at Scryfall.** Identifying a card still means sending the text the scanner reads, and your IP address, to Scryfall in the USA, and that now needs your consent the first time you open Scan Cards. You can withdraw it in Settings at any time\n- **The scanner gets its list of set codes from ManaVoid** rather than from Scryfall\n\n### Fixed\n- **The scanner keeps to Scryfall's request limits.** It could send up to ten name lookups a second where Scryfall allows two, and after being told to slow down it now pauses for the 30 seconds Scryfall asks for instead of carrying on"
+        },
+        {
           "version": "0.41.0",
           "buildVersion": "144",
           "date": "2026-09-23T19:57:27Z",
@@ -51,10 +60,10 @@
           "localizedDescription": "### Changed\n- **The app is now called ManaVoid**, with the new mark on the home screen and as its icon on every platform. The website was renamed at the same time and now lives at **manavoid.app**; nothing about your games, decks or collection changes because of the name\n- **The app now talks to manavoid.app.** The old address still answers, so signing in, your decks, your collection and your match history are unaffected either way. \"Create an account\" now opens the same site the app is signed in to rather than a hardcoded one\n- **The game menu opens from the mark at the centre of the table**, in place of the black circle with three lines in it. Same tap, same menu, and it reads the same way up from either side of the table\n\n### Fixed\n- **The poison icon sat slightly off-centre in its circle on the far side of the table.** It happened on every tile across from you *except* whoever's turn it was, which is what made it look like a quirk of the active tile rather than a bug. The active tile's border is thicker, and the border was shifting everything on the tile by a pixel and a half — harmless on your own side, but the far row is drawn upside down, which turned that shift into exactly half a pixel and split the glyph across two rows of pixels. The border no longer moves anything, so the whole tile now also stops twitching as the turn passes\n\n### ⚠️ Upgrade note\n- **This installs as a new app rather than replacing the old one.** ManaVoid carries new platform identifiers, which is what lets the two exist side by side — and is also why **nothing is carried across**: your game log, players, decks, collection and binders stay in the ManaVortex app, which keeps working and which you should not delete until you are sure you have what you need. Anything in your account (decks, collection, binders, wishlist, trades, match history) comes straight back down when you sign in, because it never lived on the phone. What is **only** on the phone is the game log, the players you created, and any cards you scanned without being signed in — sign in and use Collection → *Move these cards to my account* before switching if you want the last of those to come with you"
         }
       ],
-      "version": "0.41.0",
-      "versionDate": "2026-09-23T19:57:27Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.41.0/ManaVoid.ipa",
-      "size": 30069278
+      "version": "0.41.1",
+      "versionDate": "2026-09-24T13:49:27Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.41.1/ManaVoid.ipa",
+      "size": 30067093
     }
   ],
   "news": []
