@@ -33,6 +33,15 @@
       },
       "versions": [
         {
+          "version": "0.44.0",
+          "buildVersion": "153",
+          "date": "2026-10-01T19:14:26Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.44.0/ManaVoid.ipa",
+          "size": 30465290,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Added\n- **Settings → Licences.** Every open-source package in the app with its licence text, plus the three bundled fonts (SIL Open Font License) and the Manamoji symbols, and on Android the native libraries the scanner and QR reader link — Google ML Kit, Play Services, AndroidX, TensorFlow Lite. The native list is regenerated with `tool/update_native_licenses.sh`\n- **The Terms screen can ask you to confirm you are at least 16**, when a new version of the Terms asks every account to (the next one will). The Accept button waits for the box\n- **A suspended account sees why.** If your account is suspended, the app shows the reasons, the basis and how long it lasts instead of the app, says how to contest it, and offers exporting your data or deleting your account on the website, or signing out. Your games on the phone are not affected, and a game in progress is not interrupted"
+        },
+        {
           "version": "0.41.3",
           "buildVersion": "147",
           "date": "2026-09-24T18:14:29Z",
@@ -78,10 +87,10 @@
           "localizedDescription": "### Changed\n- **The app is now called ManaVoid**, with the new mark on the home screen and as its icon on every platform. The website was renamed at the same time and now lives at **manavoid.app**; nothing about your games, decks or collection changes because of the name\n- **The app now talks to manavoid.app.** The old address still answers, so signing in, your decks, your collection and your match history are unaffected either way. \"Create an account\" now opens the same site the app is signed in to rather than a hardcoded one\n- **The game menu opens from the mark at the centre of the table**, in place of the black circle with three lines in it. Same tap, same menu, and it reads the same way up from either side of the table\n\n### Fixed\n- **The poison icon sat slightly off-centre in its circle on the far side of the table.** It happened on every tile across from you *except* whoever's turn it was, which is what made it look like a quirk of the active tile rather than a bug. The active tile's border is thicker, and the border was shifting everything on the tile by a pixel and a half — harmless on your own side, but the far row is drawn upside down, which turned that shift into exactly half a pixel and split the glyph across two rows of pixels. The border no longer moves anything, so the whole tile now also stops twitching as the turn passes\n\n### ⚠️ Upgrade note\n- **This installs as a new app rather than replacing the old one.** ManaVoid carries new platform identifiers, which is what lets the two exist side by side — and is also why **nothing is carried across**: your game log, players, decks, collection and binders stay in the ManaVortex app, which keeps working and which you should not delete until you are sure you have what you need. Anything in your account (decks, collection, binders, wishlist, trades, match history) comes straight back down when you sign in, because it never lived on the phone. What is **only** on the phone is the game log, the players you created, and any cards you scanned without being signed in — sign in and use Collection → *Move these cards to my account* before switching if you want the last of those to come with you"
         }
       ],
-      "version": "0.41.3",
-      "versionDate": "2026-09-24T18:14:29Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.41.3/ManaVoid.ipa",
-      "size": 30066516
+      "version": "0.44.0",
+      "versionDate": "2026-10-01T19:14:26Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.44.0/ManaVoid.ipa",
+      "size": 30465290
     }
   ],
   "news": []
