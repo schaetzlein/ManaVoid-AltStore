@@ -33,6 +33,15 @@
       },
       "versions": [
         {
+          "version": "0.44.1",
+          "buildVersion": "154",
+          "date": "2026-10-07T17:25:14Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.44.1/ManaVoid.ipa",
+          "size": 30480103,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Added\n- **Settings links the Terms of Service and the Impressum**, beside the privacy policy and the Licences, each opening on the website\n- **New Terms can be accepted before they take effect.** While a change to the Terms is announced, the home screen says from when it applies; \"Review\" shows what changes, links the changes and the full text on the website, and accepts them now (with the age confirmation when the new Terms ask for it), so the Terms screen does not stop you on the day. \"Later\" hides the notice for that version on this phone\n\n### Changed\n- **Deck lists group double-faced cards by their front face**, as the website does: Agadeem's Awakening is a sorcery, a Pathway a land, an Ixalan flip land an enchantment. The Lands heading says **+N MDFC** when the deck also holds modal double-faced spells that can be played as a land (maybeboard not counted)\n- **The privacy policy opens in the app's language**: the German Datenschutzerklärung for German, its English translation otherwise — from Settings and from the ML Kit consent dialog\n- **\"Create account\" opens the registration form** instead of the website's front page\n- **New Terms no longer look like a lost session.** From 3 November the website refuses an account's requests until new Terms are accepted; the app now brings up the Terms screen when that happens, and never signs you out over it\n\n### Fixed\n- **A session that expired while you were away no longer leaves your account's data on the phone.** Signing out cleared your decks, collection, match history and wishlist from the phone, but a session that had run out by the next launch only removed the sign-in, so all of it stayed — visible while signed out, and to the next account signed in here. Both now clear the same things"
+        },
+        {
           "version": "0.44.0",
           "buildVersion": "153",
           "date": "2026-10-01T19:14:26Z",
@@ -87,10 +96,10 @@
           "localizedDescription": "### Changed\n- **The app is now called ManaVoid**, with the new mark on the home screen and as its icon on every platform. The website was renamed at the same time and now lives at **manavoid.app**; nothing about your games, decks or collection changes because of the name\n- **The app now talks to manavoid.app.** The old address still answers, so signing in, your decks, your collection and your match history are unaffected either way. \"Create an account\" now opens the same site the app is signed in to rather than a hardcoded one\n- **The game menu opens from the mark at the centre of the table**, in place of the black circle with three lines in it. Same tap, same menu, and it reads the same way up from either side of the table\n\n### Fixed\n- **The poison icon sat slightly off-centre in its circle on the far side of the table.** It happened on every tile across from you *except* whoever's turn it was, which is what made it look like a quirk of the active tile rather than a bug. The active tile's border is thicker, and the border was shifting everything on the tile by a pixel and a half — harmless on your own side, but the far row is drawn upside down, which turned that shift into exactly half a pixel and split the glyph across two rows of pixels. The border no longer moves anything, so the whole tile now also stops twitching as the turn passes\n\n### ⚠️ Upgrade note\n- **This installs as a new app rather than replacing the old one.** ManaVoid carries new platform identifiers, which is what lets the two exist side by side — and is also why **nothing is carried across**: your game log, players, decks, collection and binders stay in the ManaVortex app, which keeps working and which you should not delete until you are sure you have what you need. Anything in your account (decks, collection, binders, wishlist, trades, match history) comes straight back down when you sign in, because it never lived on the phone. What is **only** on the phone is the game log, the players you created, and any cards you scanned without being signed in — sign in and use Collection → *Move these cards to my account* before switching if you want the last of those to come with you"
         }
       ],
-      "version": "0.44.0",
-      "versionDate": "2026-10-01T19:14:26Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.44.0/ManaVoid.ipa",
-      "size": 30465290
+      "version": "0.44.1",
+      "versionDate": "2026-10-07T17:25:14Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.44.1/ManaVoid.ipa",
+      "size": 30480103
     }
   ],
   "news": []
