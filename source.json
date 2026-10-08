@@ -33,6 +33,15 @@
       },
       "versions": [
         {
+          "version": "0.44.3",
+          "buildVersion": "156",
+          "date": "2026-10-08T12:15:19Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.44.3/ManaVoid.ipa",
+          "size": 30649648,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Added\n- **\"Check your inbox\" until your email address is confirmed.** When the website asks a signed-in account to confirm its address first, the app shows which address the link went to, resends the email, lets you continue once you have clicked the link, and opens the website to change a wrong address. You stay signed in and nothing on the phone is cleared; the account just does not sync until the address is confirmed\n- **Act on several wishlist cards at once.** Tap **Select** (or long-press a card), tick cards or **Select all**, then:\n  - **Got them** moves them into your collection and off your wishlist: pick a binder (or none), one condition and the date you got them, and how many of each arrived — fewer than you wished for leaves the rest on the wishlist. Cards are added in the printing on your wishlist; change the printing afterwards on the website\n  - **Buy** gives the shopping list as names only or with set, to copy, open in TCGplayer's Mass Entry, or paste into a Cardmarket Wants list\n  - **Remove** takes them off your wishlist, after asking\n  - **Use cheapest printing** (under ⋮) switches them to the cheapest printing of each card, after asking; cards without a price stay as they are\n  - Got them, Remove and Use cheapest printing need a connection and say so when you are offline; against a website that does not offer them yet, they say that instead of failing"
+        },
+        {
           "version": "0.44.2",
           "buildVersion": "155",
           "date": "2026-10-07T19:29:19Z",
@@ -105,10 +114,10 @@
           "localizedDescription": "### Changed\n- **The app is now called ManaVoid**, with the new mark on the home screen and as its icon on every platform. The website was renamed at the same time and now lives at **manavoid.app**; nothing about your games, decks or collection changes because of the name\n- **The app now talks to manavoid.app.** The old address still answers, so signing in, your decks, your collection and your match history are unaffected either way. \"Create an account\" now opens the same site the app is signed in to rather than a hardcoded one\n- **The game menu opens from the mark at the centre of the table**, in place of the black circle with three lines in it. Same tap, same menu, and it reads the same way up from either side of the table\n\n### Fixed\n- **The poison icon sat slightly off-centre in its circle on the far side of the table.** It happened on every tile across from you *except* whoever's turn it was, which is what made it look like a quirk of the active tile rather than a bug. The active tile's border is thicker, and the border was shifting everything on the tile by a pixel and a half — harmless on your own side, but the far row is drawn upside down, which turned that shift into exactly half a pixel and split the glyph across two rows of pixels. The border no longer moves anything, so the whole tile now also stops twitching as the turn passes\n\n### ⚠️ Upgrade note\n- **This installs as a new app rather than replacing the old one.** ManaVoid carries new platform identifiers, which is what lets the two exist side by side — and is also why **nothing is carried across**: your game log, players, decks, collection and binders stay in the ManaVortex app, which keeps working and which you should not delete until you are sure you have what you need. Anything in your account (decks, collection, binders, wishlist, trades, match history) comes straight back down when you sign in, because it never lived on the phone. What is **only** on the phone is the game log, the players you created, and any cards you scanned without being signed in — sign in and use Collection → *Move these cards to my account* before switching if you want the last of those to come with you"
         }
       ],
-      "version": "0.44.2",
-      "versionDate": "2026-10-07T19:29:19Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.44.2/ManaVoid.ipa",
-      "size": 30494249
+      "version": "0.44.3",
+      "versionDate": "2026-10-08T12:15:19Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.44.3/ManaVoid.ipa",
+      "size": 30649648
     }
   ],
   "news": []
