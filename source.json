@@ -33,6 +33,15 @@
       },
       "versions": [
         {
+          "version": "0.45.0",
+          "buildVersion": "158",
+          "date": "2026-10-10T11:34:15Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.45.0/ManaVoid.ipa",
+          "size": 30812662,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Added\n- **Choose the scanner's text recognition** in Settings → Text recognition: Google ML Kit, or an engine that sends nothing anywhere: Tesseract on Android, Apple's Vision on iOS. The local engine opens the scanner without the ML Kit consent question. Offered side by side while the two are compared\n\n### Changed\n- **The scan receipt shows the card's name on a line of its own**, with set, number and price below and the confidence on the right, at a fixed width that no longer jumps with the name. The session's value sits centred at the top\n- **The scanner finds more cards' outlines**: borderless and pale cards on a pale table, whose edge it used to miss, so their set code and collector number are read too\n- **Older cards get the right printing**: a card that prints a collector number but no set code (roughly 1998–2014) is matched to the printing with that number, instead of the newest printing of the card\n- **The card's own language is read off it** (`SET DE`) even when the dot between set code and language is not recognised, so a German card is compared with its German name on any phone\n- **A capture is corrected when the scanner reads the card better a moment later**, instead of keeping the first, weaker guess at its printing\n- **Cards with the title in the middle** (the inverted borderless frame) are recognised by name\n\n### Fixed\n- **A card was added twice when you placed the next one**: the first reading of the new card was taken for the old card. A card lying still is also no longer added again after a moment without a readable title"
+        },
+        {
           "version": "0.44.4",
           "buildVersion": "157",
           "date": "2026-10-08T17:42:42Z",
@@ -123,10 +132,10 @@
           "localizedDescription": "### Changed\n- **The app is now called ManaVoid**, with the new mark on the home screen and as its icon on every platform. The website was renamed at the same time and now lives at **manavoid.app**; nothing about your games, decks or collection changes because of the name\n- **The app now talks to manavoid.app.** The old address still answers, so signing in, your decks, your collection and your match history are unaffected either way. \"Create an account\" now opens the same site the app is signed in to rather than a hardcoded one\n- **The game menu opens from the mark at the centre of the table**, in place of the black circle with three lines in it. Same tap, same menu, and it reads the same way up from either side of the table\n\n### Fixed\n- **The poison icon sat slightly off-centre in its circle on the far side of the table.** It happened on every tile across from you *except* whoever's turn it was, which is what made it look like a quirk of the active tile rather than a bug. The active tile's border is thicker, and the border was shifting everything on the tile by a pixel and a half — harmless on your own side, but the far row is drawn upside down, which turned that shift into exactly half a pixel and split the glyph across two rows of pixels. The border no longer moves anything, so the whole tile now also stops twitching as the turn passes\n\n### ⚠️ Upgrade note\n- **This installs as a new app rather than replacing the old one.** ManaVoid carries new platform identifiers, which is what lets the two exist side by side — and is also why **nothing is carried across**: your game log, players, decks, collection and binders stay in the ManaVortex app, which keeps working and which you should not delete until you are sure you have what you need. Anything in your account (decks, collection, binders, wishlist, trades, match history) comes straight back down when you sign in, because it never lived on the phone. What is **only** on the phone is the game log, the players you created, and any cards you scanned without being signed in — sign in and use Collection → *Move these cards to my account* before switching if you want the last of those to come with you"
         }
       ],
-      "version": "0.44.4",
-      "versionDate": "2026-10-08T17:42:42Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.44.4/ManaVoid.ipa",
-      "size": 30760022
+      "version": "0.45.0",
+      "versionDate": "2026-10-10T11:34:15Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.45.0/ManaVoid.ipa",
+      "size": 30812662
     }
   ],
   "news": []
