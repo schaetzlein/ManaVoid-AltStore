@@ -33,6 +33,15 @@
       },
       "versions": [
         {
+          "version": "0.45.1",
+          "buildVersion": "159",
+          "date": "2026-10-13T17:49:31Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.45.1/ManaVoid.ipa",
+          "size": 30815361,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Added\n- **Search for several card types at once**: add types as chips and match all of them (\"Artifact\" and \"Creature\") or any of them, in card search and the collection filter, like rules text\n\n### Changed\n- **Card rows in search, set pages and decks show set and number on a line of their own**, so a long type line no longer cuts them off\n- **The colour filter is the six mana symbols across the full width**, grey until picked and in their own colour once picked, colourless included, in every card, deck and precon filter. The colour count sits right under the colours instead of behind *More filters*\n- **Rarity is picked from the website's rarity pills**, and uncommon is silver on the phone and the website, no longer the same grey as common. German keeps the English rarity names, as German players, the cards and the website do\n- **A collection row shows what it is worth**: the row's total, and the count times one copy's price under it, as on the website. The collection's total value is in bold\n- **Foil and etched cards are marked the website's way**, a rainbow or gold stripe down the row's edge, in the collection, the wishlist and trades, instead of a sparkle (which also marked etched cards as foil on the wishlist)\n\n### Fixed\n- **Card thumbnails in lists are sharp**: search results, set pages, decks, the wishlist, trades, the scan receipt and the printing picker decoded each image at its exact size on screen, which blurred it\n- **Mana symbols are sharp** at small sizes, and so is the Cardmarket button on the card sheet\n- **Etched cards are valued at their etched price** in the collection, scan sessions, decks, the card sheet and the CSV export, instead of the foil or (usually) the plain printing's price\n- **Foil-only and etched-only printings show a price** in card search and on set pages, labelled with the finish (a serialized or showcase card used to show none)\n- **\"Got them\" in the wishlist's selection bar is no longer cut to \"Got…\"** while half the bar is empty"
+        },
+        {
           "version": "0.45.0",
           "buildVersion": "158",
           "date": "2026-10-10T11:34:15Z",
@@ -132,10 +141,10 @@
           "localizedDescription": "### Changed\n- **The app is now called ManaVoid**, with the new mark on the home screen and as its icon on every platform. The website was renamed at the same time and now lives at **manavoid.app**; nothing about your games, decks or collection changes because of the name\n- **The app now talks to manavoid.app.** The old address still answers, so signing in, your decks, your collection and your match history are unaffected either way. \"Create an account\" now opens the same site the app is signed in to rather than a hardcoded one\n- **The game menu opens from the mark at the centre of the table**, in place of the black circle with three lines in it. Same tap, same menu, and it reads the same way up from either side of the table\n\n### Fixed\n- **The poison icon sat slightly off-centre in its circle on the far side of the table.** It happened on every tile across from you *except* whoever's turn it was, which is what made it look like a quirk of the active tile rather than a bug. The active tile's border is thicker, and the border was shifting everything on the tile by a pixel and a half — harmless on your own side, but the far row is drawn upside down, which turned that shift into exactly half a pixel and split the glyph across two rows of pixels. The border no longer moves anything, so the whole tile now also stops twitching as the turn passes\n\n### ⚠️ Upgrade note\n- **This installs as a new app rather than replacing the old one.** ManaVoid carries new platform identifiers, which is what lets the two exist side by side — and is also why **nothing is carried across**: your game log, players, decks, collection and binders stay in the ManaVortex app, which keeps working and which you should not delete until you are sure you have what you need. Anything in your account (decks, collection, binders, wishlist, trades, match history) comes straight back down when you sign in, because it never lived on the phone. What is **only** on the phone is the game log, the players you created, and any cards you scanned without being signed in — sign in and use Collection → *Move these cards to my account* before switching if you want the last of those to come with you"
         }
       ],
-      "version": "0.45.0",
-      "versionDate": "2026-10-10T11:34:15Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.45.0/ManaVoid.ipa",
-      "size": 30812662
+      "version": "0.45.1",
+      "versionDate": "2026-10-13T17:49:31Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.45.1/ManaVoid.ipa",
+      "size": 30815361
     }
   ],
   "news": []
