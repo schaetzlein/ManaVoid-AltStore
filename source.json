@@ -33,6 +33,15 @@
       },
       "versions": [
         {
+          "version": "0.49.0",
+          "buildVersion": "163",
+          "date": "2026-10-15T12:38:41Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.49.0/ManaVoid.ipa",
+          "size": 31021375,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Added\n- **Your account on this device**: the first time you sign in on a device, the app asks once what to do with what is already there: whether one of your local players is you (that player then becomes your account's player, with its games and decks, under your account name), whether to move the cards you scanned to your account, and whether to upload your games from now on. Each question only appears when it applies, and all of them can be answered later in Settings\n- **Games you played before signing up stay visible**: signed in, History → Record has a section *Only on this device* with the games this device recorded and never uploaded\n\n### Changed\n- **Match upload only sends games you finish from now on**: switching it on no longer sends every game since the app was installed. Settings says how many earlier games stay on this device\n- **History says plainly where each game is**: *Only here*, *Not uploaded yet*, *Uploading*, *Uploaded* or *Upload failed*; a game another player logged with you in it says *Shared*, or *Confirm?* while it waits for your answer\n- **Your games count for you on the website whatever deck you played**: the upload marks your own seat, so a deck typed in at the table, or one you deleted later, no longer leaves the game out of your record (needs ManaVoid-Web 3.338.0)\n- **Deck records are per player**: your \"Atraxa\" and a friend's \"Atraxa\" are two records, in the seat picker and on the Record page\n- **Deleting a player says how many of their games stay in History**\n\n### Fixed\n- **The menu mark at the centre of the board sits on whole pixels**: in a desktop window of an odd size it was drawn half a pixel off, which made it look soft"
+        },
+        {
           "version": "0.48.0",
           "buildVersion": "162",
           "date": "2026-10-15T10:38:30Z",
@@ -168,10 +177,10 @@
           "localizedDescription": "### Changed\n- **The app is now called ManaVoid**, with the new mark on the home screen and as its icon on every platform. The website was renamed at the same time and now lives at **manavoid.app**; nothing about your games, decks or collection changes because of the name\n- **The app now talks to manavoid.app.** The old address still answers, so signing in, your decks, your collection and your match history are unaffected either way. \"Create an account\" now opens the same site the app is signed in to rather than a hardcoded one\n- **The game menu opens from the mark at the centre of the table**, in place of the black circle with three lines in it. Same tap, same menu, and it reads the same way up from either side of the table\n\n### Fixed\n- **The poison icon sat slightly off-centre in its circle on the far side of the table.** It happened on every tile across from you *except* whoever's turn it was, which is what made it look like a quirk of the active tile rather than a bug. The active tile's border is thicker, and the border was shifting everything on the tile by a pixel and a half — harmless on your own side, but the far row is drawn upside down, which turned that shift into exactly half a pixel and split the glyph across two rows of pixels. The border no longer moves anything, so the whole tile now also stops twitching as the turn passes\n\n### ⚠️ Upgrade note\n- **This installs as a new app rather than replacing the old one.** ManaVoid carries new platform identifiers, which is what lets the two exist side by side — and is also why **nothing is carried across**: your game log, players, decks, collection and binders stay in the ManaVortex app, which keeps working and which you should not delete until you are sure you have what you need. Anything in your account (decks, collection, binders, wishlist, trades, match history) comes straight back down when you sign in, because it never lived on the phone. What is **only** on the phone is the game log, the players you created, and any cards you scanned without being signed in — sign in and use Collection → *Move these cards to my account* before switching if you want the last of those to come with you"
         }
       ],
-      "version": "0.48.0",
-      "versionDate": "2026-10-15T10:38:30Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.48.0/ManaVoid.ipa",
-      "size": 30980444
+      "version": "0.49.0",
+      "versionDate": "2026-10-15T12:38:41Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.49.0/ManaVoid.ipa",
+      "size": 31021375
     }
   ],
   "news": []
