@@ -33,6 +33,15 @@
       },
       "versions": [
         {
+          "version": "0.52.0",
+          "buildVersion": "166",
+          "date": "2026-10-16T18:49:06Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.52.0/ManaVoid.ipa",
+          "size": 31086335,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Changed\n- **Trades say what they are about**: each trade in the list shows the partner, its status (highlighted when it is your move), the time left, and what each side gives with the card pictures, as on the website. A trade's page shows what each side is worth at today's prices and how the two compare\n- **Shared games in History read like the website's match cards**: who won with what and where you finished, the date, players, turns and length, then every seat in finishing order with its commander and the turn it went out\n- **Your own decks look like every other deck**: the sheet opened from History or the seat picker has the deck's art, its numbers, the four values and the compact list grouped by type\n- **Record → By deck shows the deck**: art, colours, bracket and the win rate as a bar\n- **Sets are tiles with their showcase art**, and a set's page opens on its value, 30-day trend and a 90-day value chart\n- **Classic mode is quicker to use at the table**: *Commander damage* is the first entry of the game menu, where a phone held sideways shows it without scrolling; its counters fit a phone's height, mark a partner pair's two commanders 1 and 2, and turn to face a player on the far side when opened from their tile\n- **Choosing the game mode on the setup screen shows both modes with what each does**, instead of a button that flipped between two words\n- **Deck tiles keep the owner in the corner**, whatever the length of the deck's name"
+        },
+        {
           "version": "0.51.0",
           "buildVersion": "165",
           "date": "2026-10-16T18:11:40Z",
@@ -195,10 +204,10 @@
           "localizedDescription": "### Changed\n- **The app is now called ManaVoid**, with the new mark on the home screen and as its icon on every platform. The website was renamed at the same time and now lives at **manavoid.app**; nothing about your games, decks or collection changes because of the name\n- **The app now talks to manavoid.app.** The old address still answers, so signing in, your decks, your collection and your match history are unaffected either way. \"Create an account\" now opens the same site the app is signed in to rather than a hardcoded one\n- **The game menu opens from the mark at the centre of the table**, in place of the black circle with three lines in it. Same tap, same menu, and it reads the same way up from either side of the table\n\n### Fixed\n- **The poison icon sat slightly off-centre in its circle on the far side of the table.** It happened on every tile across from you *except* whoever's turn it was, which is what made it look like a quirk of the active tile rather than a bug. The active tile's border is thicker, and the border was shifting everything on the tile by a pixel and a half — harmless on your own side, but the far row is drawn upside down, which turned that shift into exactly half a pixel and split the glyph across two rows of pixels. The border no longer moves anything, so the whole tile now also stops twitching as the turn passes\n\n### ⚠️ Upgrade note\n- **This installs as a new app rather than replacing the old one.** ManaVoid carries new platform identifiers, which is what lets the two exist side by side — and is also why **nothing is carried across**: your game log, players, decks, collection and binders stay in the ManaVortex app, which keeps working and which you should not delete until you are sure you have what you need. Anything in your account (decks, collection, binders, wishlist, trades, match history) comes straight back down when you sign in, because it never lived on the phone. What is **only** on the phone is the game log, the players you created, and any cards you scanned without being signed in — sign in and use Collection → *Move these cards to my account* before switching if you want the last of those to come with you"
         }
       ],
-      "version": "0.51.0",
-      "versionDate": "2026-10-16T18:11:40Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.51.0/ManaVoid.ipa",
-      "size": 31057866
+      "version": "0.52.0",
+      "versionDate": "2026-10-16T18:49:06Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.52.0/ManaVoid.ipa",
+      "size": 31086335
     }
   ],
   "news": []
