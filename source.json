@@ -33,6 +33,15 @@
       },
       "versions": [
         {
+          "version": "0.50.0",
+          "buildVersion": "164",
+          "date": "2026-10-16T17:09:24Z",
+          "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.50.0/ManaVoid.ipa",
+          "size": 31042145,
+          "minOSVersion": "15.5",
+          "localizedDescription": "### Added\n- **Classic game mode**: a game can now work like a normal life counter. Tap and hold to change life, with no swipe gestures and no detailed stats; poison, commander tax, the turn counter, the timer, dice, coin flip and the starting-player pick all stay. Commander damage is counted per opposing commander from the game menu, or by tapping a tile's damage pills; it lowers life as before, and 21 from one commander knocks a player out. Choose the default under *Settings → Game mode* and override it for one game beside *Start game*. A running detailed game can switch to classic from the game menu; a classic game cannot switch back. The game menu shows which mode is on\n- **Save result for classic games**: classic games are never uploaded on their own. Their end-of-game screen offers *Save result*, which adds just the result to your match history on ManaVoid: players, decks, winner and placements, with no damage or other detail. It needs you signed in with match upload on\n- **A pointer to Classic mode**: after your first finished game, the statistics screen says once where to find it; dismiss it and it does not come back\n- **Forgot password? on the sign-in screen**: opens the website's reset page in your browser\n\n### Changed\n- **Around the table, the people at the ends get tiles as tall as everyone else's**: side seats used to be narrower strips sized to the same area, so their life total was drawn smaller. Now every seat has the same height read from its own side, and the board is still filled edge to edge. On a narrow screen with three in a row, the end seats stop just short of that so the middle tiles do not get cramped\n- **Deleting your account says clearly what goes and what stays**: a warning that it cannot be undone, then two short lists. Deleted: your profile, collection and binders (including cards you moved up from this device), decks, wishlist, friends, uploaded matches and your place in other players' games, and open trades, whose partners are told. Kept: completed trades, for your trade partners and without your name or messages, and the games and cards on this device. If you forgot your password, a link opens the website's reset page, and the dialog stays open for when you come back\n\n### Fixed\n- **Game statistics: the two rows under *Life lost* had raw code as their labels** instead of *as damage* and *paid*"
+        },
+        {
           "version": "0.49.0",
           "buildVersion": "163",
           "date": "2026-10-15T12:38:41Z",
@@ -177,10 +186,10 @@
           "localizedDescription": "### Changed\n- **The app is now called ManaVoid**, with the new mark on the home screen and as its icon on every platform. The website was renamed at the same time and now lives at **manavoid.app**; nothing about your games, decks or collection changes because of the name\n- **The app now talks to manavoid.app.** The old address still answers, so signing in, your decks, your collection and your match history are unaffected either way. \"Create an account\" now opens the same site the app is signed in to rather than a hardcoded one\n- **The game menu opens from the mark at the centre of the table**, in place of the black circle with three lines in it. Same tap, same menu, and it reads the same way up from either side of the table\n\n### Fixed\n- **The poison icon sat slightly off-centre in its circle on the far side of the table.** It happened on every tile across from you *except* whoever's turn it was, which is what made it look like a quirk of the active tile rather than a bug. The active tile's border is thicker, and the border was shifting everything on the tile by a pixel and a half — harmless on your own side, but the far row is drawn upside down, which turned that shift into exactly half a pixel and split the glyph across two rows of pixels. The border no longer moves anything, so the whole tile now also stops twitching as the turn passes\n\n### ⚠️ Upgrade note\n- **This installs as a new app rather than replacing the old one.** ManaVoid carries new platform identifiers, which is what lets the two exist side by side — and is also why **nothing is carried across**: your game log, players, decks, collection and binders stay in the ManaVortex app, which keeps working and which you should not delete until you are sure you have what you need. Anything in your account (decks, collection, binders, wishlist, trades, match history) comes straight back down when you sign in, because it never lived on the phone. What is **only** on the phone is the game log, the players you created, and any cards you scanned without being signed in — sign in and use Collection → *Move these cards to my account* before switching if you want the last of those to come with you"
         }
       ],
-      "version": "0.49.0",
-      "versionDate": "2026-10-15T12:38:41Z",
-      "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.49.0/ManaVoid.ipa",
-      "size": 31021375
+      "version": "0.50.0",
+      "versionDate": "2026-10-16T17:09:24Z",
+      "downloadURL": "https://github.com/schaetzlein/ManaVoid-AltStore/releases/download/v0.50.0/ManaVoid.ipa",
+      "size": 31042145
     }
   ],
   "news": []
